@@ -1,0 +1,43 @@
+* Emacs Guides
+  This repository saved a way to use my personal experiences and basic usage with GNU/Emacs.
+
+** Table of Contents
+   * [[#foundation-in-foundation][Foundation in Foundation]]
+     - [[#basic-cursor-movement][Basic Cursor Movement]]
+   * [[#references][References]]
+   * [[#license][License]]
+
+** Foundation in Foundation
+   In Emacs, we have a rule:
+   | Keybindings | Means                                                  |
+   |-------------+--------------------------------------------------------|
+   | ~C-<char>~  | Press control key when entering the ~<char>~ character |
+   | ~M-<char>~  | Press alt key when entering the ~<char>~ character     |
+   | ~s-<char>~  | Press super key when entering the ~<char>~ character   |
+   Example:
+   #+begin_example
+   C-f means press control and enter "f" character
+   M-x means press alt and enter "x" character
+   s-a means press super and enter "a" character (Seldom used)
+   #+end_example
+
+   And you sometimes encounter multiple consecutive key combinations, example: ~C-x C-c~ to exit the Emacs.
+
+   If you want to exit some running command, use ~C-g~ to exit them.
+
+   You can try press ~M-x~ key, It'll open a "toolbox", you can find all Emacs command in it.
+
+*** Basic Cursor Movement
+   You can use ~C-f~ ~C-b~ ~C-n~ ~C-p~ keybindings to move cursor slowly.
+   | Keybindings | Actions         |
+   |-------------+-----------------|
+   | ~C-f~       | Forward a char  |
+   | ~C-b~       | Backward a char |
+   | ~C-n~       | Next line       |
+   | ~C-p~       | Previous line   |
+
+** References
+   ~C-h t~: Emacs built-in tutorial
+
+** License
+   GPL-3
