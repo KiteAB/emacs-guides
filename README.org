@@ -42,7 +42,7 @@
    | ~M-f~       | Forward a word  |
    | ~M-b~       | Backward a word |
 
-   What? Not fast enough? Try page up or page down by ~C-v~ ~M-v~:
+   *What? Not fast enough?* Try page up or page down by ~C-v~ ~M-v~:
    | Keybindings | Actions   |
    |-------------+-----------|
    | ~C-v~       | Page Down |
