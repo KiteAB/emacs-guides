@@ -39,7 +39,7 @@
    | ~C-n~       | Next line       |
    | ~C-p~       | Previous line   |
 
-===
+---
 
    And you can use ~M-f~ ~M-b~ to move cursor by words:
    | Keybindings | Actions         |
@@ -47,7 +47,7 @@
    | ~M-f~       | Forward a word  |
    | ~M-b~       | Backward a word |
 
-===
+---
 
    *What? Not fast enough?* Try page up or page down by ~C-v~ ~M-v~:
    | Keybindings | Actions   |
@@ -56,7 +56,7 @@
    | ~M-v~       | Page Up   |
    (Or you still can page up and page down by ~<PGUP>~ and ~<PGDN>~ keys)
 
-===
+---
 
    If you want the current line in a different location on the screen, you can use ~C-l~:
    | Keybindings         | Actions                                  |
@@ -65,7 +65,7 @@
    | ~C-l~ (second time) | Put current line to top in the screen    |
    | ~C-l~ (third time)  | Put current line to bottom in the screen |
 
-===
+---
 
    ~C-a~ ~C-e~ ~M-a~ ~M-e~ can help you fast move cursor to beginning of line or end of line, sentences can do that too:
    | Keybindings | Actions               |
@@ -75,7 +75,7 @@
    | ~M-a~       | Beginning of sentence |
    | ~M-e~       | End of sentence       |
 
-===
+---
 
    And ~M-<~ ~M->~ is the fastest:
    | Keybindings | Actions           |
