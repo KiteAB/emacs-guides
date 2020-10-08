@@ -40,4 +40,4 @@
    ~C-h t~: Emacs built-in tutorial
 
 ** License
-   GPL-3
+   GPL-3.0
