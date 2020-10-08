@@ -3,7 +3,7 @@
 
 ** Table of Contents
    * [[#foundation-in-foundation][Foundation in Foundation]]
-     - [[#basic-cursor-movement][Basic Cursor Movement]]
+     - [[#cursor-movement][Cursor Movement]]
    * [[#references][References]]
    * [[#license][License]]
 
@@ -27,8 +27,8 @@
 
    You can try press ~M-x~ key, It'll open a "toolbox", you can find all Emacs command in it.
 
-*** Basic Cursor Movement
-   You can use ~C-f~ ~C-b~ ~C-n~ ~C-p~ keybindings to move cursor slowly.
+*** Cursor Movement
+   You can use ~C-f~ ~C-b~ ~C-n~ ~C-p~ keybindings to move cursor slowly:
    | Keybindings | Actions         |
    |-------------+-----------------|
    | ~C-f~       | Forward a char  |
@@ -36,8 +36,21 @@
    | ~C-n~       | Next line       |
    | ~C-p~       | Previous line   |
 
+   And you can use ~M-f~ ~M-b~ to move cursor by words:
+   | Keybindings | Actions         |
+   |-------------+-----------------|
+   | ~M-f~       | Forward a word  |
+   | ~M-b~       | Backward a word |
+
+   What? Not fast enough? Try page up or page down by ~C-v~ ~M-v~:
+   | Keybindings | Actions   |
+   |-------------+-----------|
+   | ~C-v~       | Page Down |
+   | ~M-v~       | Page Up   |
+   (Or you still can page up and page down by ~<PGUP>~ and ~<PGDN>~ keys)
+
 ** References
-   ~C-h t~: Emacs built-in tutorial
+   Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial
 
 ** License
    GPL-3.0
