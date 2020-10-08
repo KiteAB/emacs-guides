@@ -3,7 +3,7 @@
 
 ** Table of Contents
    * [[#foundation-in-foundation][Foundation in Foundation]]
-     - [[#cursor-movement][Cursor Movement]]
+     - [[#explore-files][Explore Files]]
    * [[#references][References]]
    * [[#license][License]]
 
@@ -14,6 +14,7 @@
    | ~C-<char>~  | Press control key when entering the ~<char>~ character |
    | ~M-<char>~  | Press alt key when entering the ~<char>~ character     |
    | ~s-<char>~  | Press super key when entering the ~<char>~ character   |
+
    Example:
    #+begin_example
    C-f means press control and enter "f" character
@@ -27,7 +28,7 @@
 
    You can try press ~M-x~ key, It'll open a "toolbox", you can find all Emacs command in it.
 
-*** Cursor Movement
+*** Explore Files
    You can use ~C-f~ ~C-b~ ~C-n~ ~C-p~ keybindings to move cursor slowly:
    | Keybindings | Actions         |
    |-------------+-----------------|
