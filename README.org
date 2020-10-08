@@ -1,6 +1,8 @@
 * Emacs Guides
   This repository saved a way to use my personal experiences and basic usage with GNU/Emacs.
 
+  *Note*: More practice are not just look at sentences, it's can helps you learn quickly!
+
 ** Table of Contents
    * [[#foundation-in-foundation][Foundation in Foundation]]
      - [[#explore-files][Explore Files]]
@@ -49,6 +51,21 @@
    | ~C-v~       | Page Down |
    | ~M-v~       | Page Up   |
    (Or you still can page up and page down by ~<PGUP>~ and ~<PGDN>~ keys)
+
+   If you want the current line in a different location on the screen, you can use ~C-l~:
+   | Keybindings         | Actions                                  |
+   |---------------------+------------------------------------------|
+   | ~C-l~ (first time)  | Re-center current line                   |
+   | ~C-l~ (second time) | Put current line to top in the screen    |
+   | ~C-l~ (third time)  | Put current line to bottom in the screen |
+
+   ~C-a~ ~C-e~ ~M-a~ ~M-e~ can help you fast move cursor to beginning of line or end of line, sentences can do that too:
+   | Keybindings | Actions               |
+   |-------------+-----------------------|
+   | ~C-a~       | Beginning of line     |
+   | ~C-e~       | End of line           |
+   | ~M-a~       | Beginning of sentence |
+   | ~M-e~       | End of sentence       |
 
 ** References
    Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial
