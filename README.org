@@ -67,6 +67,12 @@
    | ~M-a~       | Beginning of sentence |
    | ~M-e~       | End of sentence       |
 
+   And ~M-<~ ~M->~ is the fastest:
+   | Keybindings | Actions           |
+   |-------------+-------------------|
+   | ~M-<~       | Beginning of file |
+   | ~M->~       | End of file       |
+
 ** References
    Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial
 
