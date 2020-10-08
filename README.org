@@ -1,7 +1,9 @@
 * Emacs Guides
-  This repository saved a way to use my personal experiences and basic usage with GNU/Emacs.
+  This repository saved the basic usage of GNU/Emacs and my personal experience.
 
   *Note*: More practice are not just look at sentences, it's can helps you learn quickly!
+
+  [[./README_cn.org][中文版 (不推荐)]]
 
 ** Table of Contents
    * [[#basics-in-basic][Basics in Basic]]
