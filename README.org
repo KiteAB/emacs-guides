@@ -8,10 +8,17 @@
   [[./README_cn.org][中文版]]
 
 ** Table of Contents
+   * [[#contributors][Contributors]]
    * [[#basics-in-basic][Basics in Basic]]
      - [[#explore-files][Explore Files]]
    * [[#references][References]]
    * [[#license][License]]
+
+** Contributors
+   Thanks all contributors about this repository! (Rank order of contribution date)
+   | Contributors | Emacs Configuration Files Repository |
+   |--------------+--------------------------------------|
+   | [[https://github.com/KiteAB][KiteAB]]       | [[https://github.com/KiteAB/.emacs.d][.emacs.d]]                             |
 
 ** Basics in Basic
    In Emacs, we have a rule:
