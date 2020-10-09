@@ -5,7 +5,7 @@
 
   My Emacs configuration files are [[https://github.com/KiteAB/.emacs.d][these]], BTW.
 
-  [[./README_cn.org][中文版 (不推荐)]]
+  [[./README_cn.org][中文版]]
 
 ** Table of Contents
    * [[#basics-in-basic][Basics in Basic]]

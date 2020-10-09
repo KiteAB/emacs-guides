@@ -3,7 +3,7 @@
 
   *注意*: 多练习而不只是看着这些句子, 它能帮助你更快地学习!
 
-  [[./README.org][English version (recommend)]]
+  [[./README.org][English version]]
 
 ** 目录
    * [[#基础中的基础][基础中的基础]]
