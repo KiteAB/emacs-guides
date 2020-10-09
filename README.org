@@ -118,6 +118,12 @@
 
 ** Window Management
    You can use some keybindings to manage your windows in Emacs.
+   | Keybindings | Actions                           |
+   |-------------+-----------------------------------|
+   | ~C-x 0~     | Close current window (Not buffer) |
+   | ~C-x 1~     | Leaving only the current window   |
+   | ~C-x 2~     | Horizontal split a window         |
+   | ~C-x 3~     | Vertical split a window           |
 
 ** References
    Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial
