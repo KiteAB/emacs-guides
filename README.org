@@ -3,6 +3,8 @@
 
   *Note*: More practice are not just look at sentences, it's can helps you learn quickly!
 
+  My Emacs configuration files are [[https://github.com/KiteAB/.emacs.d][these]], BTW.
+
   [[./README_cn.org][中文版 (不推荐)]]
 
 ** Table of Contents
