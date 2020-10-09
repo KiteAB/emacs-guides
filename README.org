@@ -1,3 +1,5 @@
+# +OPTIONS: toc:10
+
 * Emacs Guides
   This repository saved the basic usage of GNU/Emacs and my personal experience.
 
@@ -93,6 +95,10 @@
    |-------------+-------------------|
    | ~M-<~       | Beginning of file |
    | ~M->~       | End of file       |
+
+-----
+
+*** Number Argument
 
 ** References
    Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial
