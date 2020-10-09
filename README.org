@@ -1,5 +1,3 @@
-# +OPTIONS: toc:10
-
 * Emacs Guides
   This repository saved the basic usage of GNU/Emacs and my personal experience.
 
@@ -13,6 +11,9 @@
    * [[#contributors][Contributors]]
    * [[#basics-in-basic][Basics in Basic]]
      - [[#explore-files][Explore Files]]
+     - [[#number-argument][Number Argument]]
+     - [[#disabled-commands][Disabled Commands]]
+   * [[#window-management][Window Management]]
    * [[#references][References]]
    * [[#license][License]]
 
@@ -99,6 +100,24 @@
 -----
 
 *** Number Argument
+    You can add a number argument for some commands.
+    | Keybindings       | Actions                       |
+    |-------------------+-------------------------------|
+    | ~C-u <num> <cmd>~ | Execute ~<num>~ times ~<cmd>~ |
+    Here is an example:
+    #+begin_example
+    "C-u 8 C-n" means do "C-n" 8 times, which's cursor down 8 lines.
+    #+end_example
+
+-----
+
+*** Disabled Commands
+    Emacs has some disabled commands, they're dangerous commands, so Emacs disabled it.
+    
+    If you press ~C-x C-n~, Emacs will create a buffer named ~*Disabled Command*~, and you can enter ~y~ to enable this command or ~n~ to continue disable it.
+
+** Window Management
+   You can use some keybindings to manage your windows in Emacs.
 
 ** References
    Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial
