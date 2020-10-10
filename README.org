@@ -1,7 +1,9 @@
 * Emacs Guides
   This repository saved the basic usage of GNU/Emacs and my personal experience.
 
-  *Note*: More practice are not just look at sentences, it's can helps you learn quickly!
+  *PS*: More practice are not just look at sentences, it's can helps you learn quickly!
+
+  *PSS*: Emacs Document is your good friend, ~C-h f~ for functions document, ~C-h v~ for variables document, ~C-h k~ for keybindings document.
 
   [[./README_cn.org][中文版]]
 
