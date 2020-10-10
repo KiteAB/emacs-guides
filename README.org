@@ -3,8 +3,6 @@
 
   *Note*: More practice are not just look at sentences, it's can helps you learn quickly!
 
-  My Emacs configuration files are [[https://github.com/KiteAB/.emacs.d][these]], BTW.
-
   [[./README_cn.org][中文版]]
 
 ** Table of Contents
@@ -22,6 +20,8 @@
    | Contributors | Emacs Configuration Files Repository |
    |--------------+--------------------------------------|
    | [[https://github.com/KiteAB][KiteAB]]       | [[https://github.com/KiteAB/.emacs.d][.emacs.d]]                             |
+
+   Contributors must view [[./todo.org][todo.org]] then edit files.
 
 ** Basics in Basic
    In Emacs, we have a rule:

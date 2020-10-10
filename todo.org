@@ -1,0 +1,8 @@
+* Emacs Guides - Todolist
+  Contributors need to view this file.
+
+  Update at any time.
+
+-----
+
+  - Emacs Tutorial(~C-h t~) transplanted to the document
