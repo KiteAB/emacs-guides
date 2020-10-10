@@ -51,7 +51,7 @@
    You can use ~C-f~ ~C-b~ ~C-n~ ~C-p~ keybindings to move cursor slowly:
    | Keybindings | Actions         |
    |-------------+-----------------|
-n  | ~C-f~       | Forward a char  |
+   | ~C-f~       | Forward a char  |
    | ~C-b~       | Backward a char |
    | ~C-n~       | Next line       |
    | ~C-p~       | Previous line   |
