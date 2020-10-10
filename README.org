@@ -1,5 +1,5 @@
 * Emacs Guides
-  This repository saved the basic usage of GNU/Emacs and my personal experience.
+  This repository saved the basic usage of GNU/Emacs and personal experiences of members of the studio.
 
   *PS*: More practice are not just look at sentences, it's can helps you learn quickly!
 
