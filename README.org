@@ -11,7 +11,10 @@
      - [[#explore-files][Explore Files]]
      - [[#number-argument][Number Argument]]
      - [[#disabled-commands][Disabled Commands]]
-   * [[#window-management][Window Management]]
+     - [[#file-operations][File Operations]]
+     - [[#buffer-operations][Buffer Operations]]
+     - [[#window-management][Window Management]]
+     - [[#search][Search]]
    * [[#references][References]]
    * [[#license][License]]
 
@@ -48,7 +51,7 @@
    You can use ~C-f~ ~C-b~ ~C-n~ ~C-p~ keybindings to move cursor slowly:
    | Keybindings | Actions         |
    |-------------+-----------------|
-   | ~C-f~       | Forward a char  |
+n  | ~C-f~       | Forward a char  |
    | ~C-b~       | Backward a char |
    | ~C-n~       | Next line       |
    | ~C-p~       | Previous line   |
@@ -97,8 +100,6 @@
    | ~M-<~       | Beginning of file |
    | ~M->~       | End of file       |
 
------
-
 *** Number Argument
     You can add a number argument for some commands.
     | Keybindings       | Actions                       |
@@ -107,16 +108,43 @@
     Here is an example:
     #+begin_example
     "C-u 8 C-n" means do "C-n" 8 times, which's cursor down 8 lines.
+    "C-u 8 *" will insert "********"
     #+end_example
-
------
 
 *** Disabled Commands
     Emacs has some disabled commands, they're dangerous commands, so Emacs disabled it.
     
     If you press ~C-x C-n~, Emacs will create a buffer named ~*Disabled Command*~, and you can enter ~y~ to enable this command or ~n~ to continue disable it.
 
-** Window Management
+*** File Operations
+    | Keybindings | Actions                                                          |
+    |-------------+------------------------------------------------------------------|
+    | ~C-x C-s~   | Save current buffer to correspond file                           |
+    | ~C-x s~     | Save multiple buffers to the corresponding file at the same time |
+    | ~C-x C-f~   | Find a file and open it                                          |
+
+*** Buffer Operations
+    You must understand the difference between ~delete~ and ~remove~, ~delete~ is remove characters directly, but ~remove~ will cut the characters to clipboard, so you can recall it.
+    | Keybindings            | Actions                                                         |
+    |------------------------+-----------------------------------------------------------------|
+    | ~C-x b~                | Switch buffer                                                   |
+    | ~C-x k~                | Kill buffer                                                     |
+    | ~<DEL>(DELETE key)~    | Delete a character before the cursor                            |
+    | ~C-d~ or ~<BACKSPACE>~ | Delete a character after the cursor                             |
+    | ~M-<DEL>~              | Remove a word before the cursor                                 |
+    | ~M-d~                  | Remove a word after the cursor                                  |
+    | ~C-k~                  | Remove from between the character cursor to the end of line     |
+    | ~M-k~                  | Remove from between the character cursor to the end of sentence |
+    | ~C-@~ or ~C-<SPC>~     | Selecting characters                                            |
+    | ~M-w~                  | Copy selected characters                                        |
+    | ~C-w~                  | Cut selected characters                                         |
+    | ~C-y~                  | Paste characters in clipboard                                   |
+    | ~C-k~ (first time)     | Remove current line (Don't remove line breaks)                  |
+    | ~C-k~ (second time)    | Remove line breaks                                              |
+    | ~C-/~ or ~C-_~         | Undo or Redo                                                    |
+    | ~C-x u~                | Undo only                                                       |
+
+*** Window Management
    You can use some keybindings to manage your windows in Emacs.
    | Keybindings | Actions                           |
    |-------------+-----------------------------------|
@@ -124,6 +152,10 @@
    | ~C-x 1~     | Leaving only the current window   |
    | ~C-x 2~     | Horizontal split a window         |
    | ~C-x 3~     | Vertical split a window           |
+   | ~C-x o~     | Switch to next window             |
+
+*** Search
+    Use ~C-s~ to down search and ~C-r~ to up search.
 
 ** References
    Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial
