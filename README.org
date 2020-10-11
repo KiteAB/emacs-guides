@@ -17,12 +17,14 @@
      - [[#buffer-operations][Buffer Operations]]
      - [[#window-management][Window Management]]
      - [[#search][Search]]
+   * [[#configuration-file][Configuration File]]
+     - [[#emacs-lisp][Emacs Lisp]]
    * [[#references][References]]
    * [[#license][License]]
 
 ** Contributors
    Thanks all contributors about this repository! (Rank order of contribution date)
-   | Contributors | Emacs Configuration Files Repository |
+   | Contributors | Emacs Configuration File Repository  |
    |--------------+--------------------------------------|
    | [[https://github.com/KiteAB][KiteAB]]       | [[https://github.com/KiteAB/.emacs.d][.emacs.d]]                             |
 
@@ -158,6 +160,25 @@
 
 *** Search
     Use ~C-s~ to down search and ~C-r~ to up search.
+
+** Configuration File
+   In general, we need to configure the editing experience suited to their profiles to get better.
+
+*** Emacs Lisp
+  To configure your own Emacs configuration file, you need to know what's Emacs Lisp and how to use it.
+
+  Programming experts usually just look at the code fragment can probably understand a programming language:
+  #+begin_src emacs-lisp
+    (+ 1 1) ; 1 + 1
+    (+ 1 2 (* 2 3)) ; 1 + 2 + ( 2 * 3 )
+
+    (setq name "Emacs Lisp") ; Variable
+    (defun hello (myname) ; Define function
+      "Function's document"
+      (message "Hello, %s!" myname)) ; Will display "Hello, Emacs Lisp!" at mini-buffer
+    (hello name) ; Execute function
+  #+end_src
+  BTW: mini-buffer is a blank area below the status bar for displaying messages and documents.
 
 ** References
    Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial
