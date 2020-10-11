@@ -5,4 +5,5 @@
 
 -----
 
-  - Emacs Tutorial(~C-h t~) transplanted to the document
+  - Recommended settings
+  - Configure your own configuration file
