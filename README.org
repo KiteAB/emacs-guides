@@ -19,6 +19,7 @@
      - [[#search][Search]]
    * [[#configuration-file][Configuration File]]
      - [[#emacs-lisp][Emacs Lisp]]
+     - [[#recommended-settings][Recommended Settings]]
    * [[#references][References]]
    * [[#license][License]]
 
@@ -164,11 +165,19 @@
 ** Configuration File
    In general, we need to configure the editing experience suited to their profiles to get better.
 
-*** Emacs Lisp
-  To configure your own Emacs configuration file, you need to know what's Emacs Lisp and how to use it.
+   Emacs configuration files are usually stored at home directory ~.emacs.d~ folder, the file structure similar to the following settings:
+   #+begin_example
+   - .emacs.d
+     - init.el ; Emacs retrieves the file to launch the default
+     - elpa    ; Emacs will download the package in here
+     - etc     ; Although not required, it is recommended that the personal configuration file on here
+   #+end_example
 
-  Programming experts usually just look at the code fragment can probably understand a programming language:
-  #+begin_src emacs-lisp
+*** Emacs Lisp
+    To configure your own Emacs configuration file, you need to know what's Emacs Lisp and how to use it.
+
+    Programming experts usually just look at the code fragment can probably understand a programming language:
+    #+begin_src emacs-lisp
     (+ 1 1) ; 1 + 1
     (+ 1 2 (* 2 3)) ; 1 + 2 + ( 2 * 3 )
 
@@ -177,8 +186,51 @@
       "Function's document"
       (message "Hello, %s!" myname)) ; Will display "Hello, Emacs Lisp!" at mini-buffer
     (hello name) ; Execute function
-  #+end_src
-  BTW: mini-buffer is a blank area below the status bar for displaying messages and documents.
+    #+end_src
+    BTW: mini-buffer is a blank area below the status bar for displaying messages and documents.
+
+*** Recommended Settings
+    #+begin_src emacs-lisp
+    ;; UI Settings
+    (menu-bar-mode -1) ; Close the menu bar
+    (tool-bar-mode -1) ; Close the tool bar
+    (setq tab-bar-show nil) ; Always not display tab bar
+    (scroll-bar-mode -1) ; Close Scroll bar
+    (tab-bar-mode -1) ; Set tab bar not display
+    (global-hl-line-mode t) ; Highlight current line
+    (setq display-line-numbers-type 'relative) ; Relative numbers for display numbers mode
+    (global-display-line-numbers-mode t) ; Set the line numbers
+    (toggle-frame-fullscreen) ; Set fullscreen
+    (setq inhibit-splash-screen t) ; Close the startup screen
+
+    ;; Other Basic Settings
+    (fset 'yes-or-no-p 'y-or-n-p) ; Change the asking's answer way
+    (show-paren-mode t) ; Highlight the "()"
+    (electric-pair-mode t) ; Auto complete the "()"
+    (setq electric-pair-pairs
+          '((?\" . ?\")
+            (?\( . ?\))
+            (?\< . ?\>)
+            (?\{ . ?\}))) ; Set the electric-pair-mode's pair keywords
+    (setq make-backup-files nil ; Don't let Emacs make up backup file
+          create-lockfiles nil ;Don't make lockfile
+          auto-save-default nil ; Don't auto save the file
+          )
+    (setq-default tab-width 2) ; The tab width
+    (setq-default indent-tabs-mode nil) ; Use space indent
+    (setq user-emacs-directory "~/.emacs.d/var") ;;; The Cache Directory
+    (setq user-init-file "~/.emacs.d/var/user-init.el")
+    (save-place-mode t) ; Save the point position
+    (setq ring-bell-function 'ignore blink-cursor-mode nil) ; Disable Infos
+    (setq scroll-step 2
+          scroll-margin 2
+          hscroll-step 2
+          hscroll-margin 2
+          scroll-conservatively 101
+          scroll-up-aggressively 0.01
+          scroll-down-aggressively 0.01
+          scroll-preserve-screen-position 'always) ; Scroll
+    #+end_src
 
 ** References
    Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial

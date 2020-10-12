@@ -19,6 +19,7 @@
      - [[#搜索][搜索]]
    * [[#配置文件][配置文件]]
      - [[#emacs-lisp][Emacs Lisp]]
+     - [[#推荐的设置项][推荐的设置项]]
    * [[#参考文献][参考文献]]
    * [[#开源协议][开源协议]]
 
@@ -164,6 +165,14 @@
 ** 配置文件
    通常, 我们需要配置出适合自己的配置文件以获得更好的编辑体验.
 
+   Emacs 的配置文件通常存放在家目录的 ~.emacs.d~ 文件夹下, 里面的文件结构通常如下:
+   #+begin_example
+   - .emacs.d
+     - init.el ; Emacs 默认会寻找此文件并加载
+     - elpa    ; Emacs 将把下载的包裹放在此处
+     - etc     ; 虽然不要求, 但推荐将个人配置放在此处
+   #+end_example
+
 *** Emacs Lisp
     要配置出自己的配置文件, 你需要知道什么是 Emacs Lisp 以及如何使用它.
 
@@ -179,6 +188,49 @@
       (hello name) ; 执行函数
     #+end_src
     顺便说一句: mini-buffer 是一块在状态栏之下的空白区域, 用于显示输出信息和基本文档.
+
+*** 推荐的设置项
+    #+begin_src emacs-lisp
+    ;; UI 设置
+    (menu-bar-mode -1) ; 关闭菜单栏
+    (tool-bar-mode -1) ; 关闭工具栏
+    (setq tab-bar-show nil) ; 关闭顶栏
+    (scroll-bar-mode -1) ; 关闭滚动条
+    (tab-bar-mode -1) ; 关闭顶栏
+    (global-hl-line-mode t) ; 高亮当前行
+    (setq display-line-numbers-type 'relative) ; 为 display-line-numbers-mode 使用相对行号
+    (global-display-line-numbers-mode t) ; 打开行号
+    (toggle-frame-fullscreen) ; 全屏
+    (setq inhibit-splash-screen t) ; 关闭启动界面
+
+    ;; 其它基本设置
+    (fset 'yes-or-no-p 'y-or-n-p) ; 切换回答是否的方式
+    (show-paren-mode t) ; 高亮 "()"
+    (electric-pair-mode t) ; 自动补全 "()"
+    (setq electric-pair-pairs
+          '((?\" . ?\")
+            (?\( . ?\))
+            (?\< . ?\>)
+            (?\{ . ?\}))) ; 设置括号补全的匹配规则
+    (setq make-backup-files nil ; 不生成备份文件
+          create-lockfiles nil ; 不生成锁文件
+          auto-save-default nil ; 关闭自动保存
+          )
+    (setq-default tab-width 2) ; 制表符长度
+    (setq-default indent-tabs-mode nil) ; 使用空格缩进
+    (setq user-emacs-directory "~/.emacs.d/var") ;;; 缓存文件夹
+    (setq user-init-file "~/.emacs.d/var/user-init.el")
+    (save-place-mode t) ; 在下一次打开文件时恢复上次的光标位置
+    (setq ring-bell-function 'ignore blink-cursor-mode nil) ; 关闭提示信息
+    (setq scroll-step 2
+          scroll-margin 2
+          hscroll-step 2
+          hscroll-margin 2
+          scroll-conservatively 101
+          scroll-up-aggressively 0.01
+          scroll-down-aggressively 0.01
+          scroll-preserve-screen-position 'always) ; 翻页设置
+    #+end_src
 
 ** 参考文献
    Emacs 教程: 在 Emacs 中按 ~C-h t~, Emacs 内置基础教程
