@@ -178,14 +178,22 @@
 
     编程高手通常只需要阅读示例代码就能大概知道一个编程语言的基本语法.
     #+begin_src emacs-lisp
-      (+ 1 1) ; 1 + 1
-      (+ 1 2 (* 2 3)) ; 1 + 2 + ( 2 * 3 )
+    (+ 1 1) ; 1 + 1
+    (+ 1 2 (* 2 3)) ; 1 + 2 + ( 2 * 3 )
 
-      (setq name "Emacs Lisp") ; 变量
-      (defun hello (myname) ; 定义函数
-        "函数文档"
-        (message "Hello, %s!" myname)) ; 将会在 mini-buffer 中显示 "Hello, Emacs Lisp!"
-      (hello name) ; 执行函数
+    (setq name "Emacs Lisp") ; 变量
+    (setq list '("1" "2" "3")) ; 列表
+    (car list) ; 提取列表的第一个值
+    (cdr list) ; 提取列表除第一个以外的值
+    (add-to-list 'list '("Things"))
+    (add-to-list 'load-path "path-to-path") ; 加载文件夹中的 Emacs Lisp 文件
+    (require 'name) ; 引用功能
+    (provide 'name) ; 提供功能
+    (push "thing" list) ; 推送到列表
+    (defun hello (myname) ; 定义函数
+      "函数文档"
+      (message "Hello, %s!" myname)) ; 将会在 mini-buffer 中显示 "Hello, Emacs Lisp!"
+    (hello name) ; 执行函数
     #+end_src
     顺便说一句: mini-buffer 是一块在状态栏之下的空白区域, 用于显示输出信息和基本文档.
 

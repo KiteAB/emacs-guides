@@ -118,7 +118,7 @@
 
 *** Disabled Commands
     Emacs has some disabled commands, they're dangerous commands, so Emacs disabled it.
-    
+
     If you press ~C-x C-n~, Emacs will create a buffer named ~*Disabled Command*~, and you can enter ~y~ to enable this command or ~n~ to continue disable it.
 
 *** File Operations
@@ -182,6 +182,14 @@
     (+ 1 2 (* 2 3)) ; 1 + 2 + ( 2 * 3 )
 
     (setq name "Emacs Lisp") ; Variable
+    (setq list '("1" "2" "3")) ; List
+    (car list) ; First value extraction list
+    (cdr list) ; Extracting all but the first value in the variable
+    (add-to-list 'list "thing")
+    (add-to-list 'load-path "path-to-path") ; Load Emacs Lisp files in path
+    (require 'name) ; Require feature
+    (provide 'name) ; Provide feature
+    (push "thing" list) ; Push to list
     (defun hello (myname) ; Define function
       "Function's document"
       (message "Hello, %s!" myname)) ; Will display "Hello, Emacs Lisp!" at mini-buffer
