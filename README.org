@@ -76,7 +76,7 @@
    |-------------+-----------|
    | ~C-v~       | Page Down |
    | ~M-v~       | Page Up   |
-   (Or you still can page up and page down by ~<PGUP>~ and ~<PGDN>~ keys)
+   (Alternatively, you can still use the ~<PGUP>~ and ~<PGDN>~ keys to page up and down)
 
 -----
 
@@ -100,10 +100,10 @@
 -----
 
    And ~M-<~ ~M->~ is the fastest:
-   | Keybindings | Actions           |
-   |-------------+-------------------|
-   | ~M-<~       | Beginning of file |
-   | ~M->~       | End of file       |
+   | Keybindings | Actions             |
+   |-------------+---------------------|
+   | ~M-<~       | Beginning of buffer |
+   | ~M->~       | End of buffer  |
 
 *** Number Argument
     You can add a number argument for some commands.
