@@ -243,5 +243,9 @@
 ** References
    Emacs Tutorial: ~C-h t~ in Emacs, Emacs built-in tutorial
 
+   Learn X in Y Minutes, X = Elisp: https://learnxinyminutes.com/docs/zh-cn/elisp-cn
+
+   Recommended Settings: https://github.com/SpringHan/.emacs.d/blob/master/etc/settings/init-basic.el
+
 ** License
    GPL-3.0

@@ -197,7 +197,7 @@
     #+end_src
     顺便说一句: mini-buffer 是一块在状态栏之下的空白区域, 用于显示输出信息和基本文档.
 
-*** 推荐的设置项
+*** 推荐设置
     #+begin_src emacs-lisp
     ;; UI 设置
     (menu-bar-mode -1) ; 关闭菜单栏
@@ -242,6 +242,10 @@
 
 ** 参考文献
    Emacs 教程: 在 Emacs 中按 ~C-h t~, Emacs 内置基础教程
+
+   Y 分钟速成 X, 其中 X = Elisp: https://learnxinyminutes.com/docs/zh-cn/elisp-cn
+
+   推荐设置: https://github.com/SpringHan/.emacs.d/blob/master/etc/settings/init-basic.el
 
 ** 开源协议
    GPL-3.0
